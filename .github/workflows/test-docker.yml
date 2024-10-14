@@ -6,14 +6,16 @@ jobs:
     steps:
       - name: Set up python
         uses: actions/setup-python@v4
-      - name: Check out
-        uses: actions/checkout@v3
       - name: Install Poetry
         uses: snok/install-poetry@v1
       - name: Install docker-compose
         uses: ndeloof/install-compose-action@v0.0.1
         with:
           legacy: true
+      - name: Check out
+        uses: actions/checkout@v3
+      - name: cd
+        run: cd python
       - name: Install package
         run: poetry install
       - name: Run pytest
