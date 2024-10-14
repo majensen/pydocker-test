@@ -13,8 +13,6 @@ jobs:
         uses: snok/install-poetry@v1
       - name: Install docker-compose
         uses: ndeloof/install-compose-action@v0.0.1
-        with:
-          legacy: true
       - name: Check out
         uses: actions/checkout@v3
       - name: Install package
