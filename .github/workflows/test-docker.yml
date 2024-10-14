@@ -19,6 +19,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Hand run docker
         run: |
+          brew install docker
           docker pull maj1/mdb-test-versioned:latest
           docker run -d -p7474:7474 -p7687:7687 --name mdb maj1/mdb-test-versioned
           sleep 20
