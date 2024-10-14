@@ -17,8 +17,6 @@ jobs:
           legacy: true
       - name: Check out
         uses: actions/checkout@v3
-      - name: cd
-        run: cd python
       - name: Install package
         run: poetry install
       - name: Run pytest
