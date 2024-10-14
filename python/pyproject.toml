@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pydocker-test"
+version = "0.1.0"
+description = "test tests"
+authors = ["Your Name <you@example.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "*"
+neo4j = "^5.25.0"
+pytest = "^8.3.3"
+pytest-docker = "^3.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,8 @@
+version: '2'
+services:
+  mdb-versioned:
+    image: 'maj1/mdb-test-versioned:latest' 
+    ports:
+      - "7474"
+      - "7473"
+      - "7687"
